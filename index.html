@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Input Types and Form Attributes Example</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="" method="post" autocomplete="on" enctype="multipart/form-data">
+      <label for="text-input">Text Input:</label>
+      <input type="text" id="text-input" name="text-input" required minlength="3" maxlength="50" placeholder="">
+
+      <label for="password-input">Password Input:</label>
+      <input type="password" id="password-input" name="password-input" required minlength="8" maxlength="20" placeholder="">
+
+      <label for="email-input">Email Input:</label>
+      <input type="email" id="email-input" name="email-input" placeholder="" required >
+
+      <label for="number-input">Number Input:</label>
+      <input type="number" id="number-input" name="number-input" placeholder="" required min="0" max="100">
+
+      <label for="range-input">Range Input:</label>
+      <input type="range" id="range-input" name="range-input" placeholder="" required min="0" max="100" step="5">
+
+      <label for="date-input">Date Input:</label>
+      <input type="date" id="date-input" name="date-input" placeholder="" required>
+
+      <label for="time-input">Time Input:</label>
+      <input type="time" id="time-input" name="time-input" placeholder="" required>
+
+      <label for="datetime-input">Datetime Input:</label>
+      <input type="datetime" id="datetime-input" name="datetime-input" placeholder="" required>
+
+      <label for="color-input">Color Input:</label>
+      <input type="color" id="color-input" name="color-input" placeholder="" required>
+
+      <label for="file-input">File Input:</label>
+      <input type="file" id="file-input" name="file-input" placeholder=""  required>
+
+      <label for="checkbox-input">Checkbox Input:</label>
+      <input type="checkbox" id="checkbox-input" name="checkbox-input"  placeholder="" checked>
+
+      <label for="radio-input-1">Radio Input 1:</label>
+      <input type="radio" id="radio-input-1" name="radio-input" value="option1"  placeholder="" checked>
+
+      <label for="radio-input-2">Radio Input 2:</label>
+      <input type="radio" id="radio-input-2" name="radio-input" value="option2" placeholder="">
+
+      <label for="select-input">Select Input:</label>
+      <select id="select-input" name="select-input" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+
+      <label for="textarea-input">Textarea Input:</label>
+      <textarea id="textarea-input" name="textarea-input" required minlength="10" maxlength="500"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
